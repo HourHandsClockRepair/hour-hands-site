@@ -70,7 +70,7 @@ header.site-header {
 }
 
 .brand-logo {
-  height: 42px;
+  height: 64px;
   width: auto;
   display: block;
 }
@@ -130,10 +130,14 @@ nav.main-nav a:hover { border-color: var(--brass); color: var(--walnut-deep); }
 /* ---------- Hero ---------- */
 
 .hero {
-  padding: 90px 24px 90px;
+  padding: 100px 24px 100px;
   text-align: center;
   position: relative;
   overflow: hidden;
+  min-height: 680px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background:
     radial-gradient(ellipse at 50% 0%, rgba(168, 133, 63, 0.10), transparent 60%);
 }
@@ -142,10 +146,11 @@ nav.main-nav a:hover { border-color: var(--brass); color: var(--walnut-deep); }
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 900px;
+  width: 620px;
+  height: auto;
   max-width: none;
   transform: translate(-50%, -50%);
-  opacity: 0.08;
+  opacity: 0.10;
   pointer-events: none;
 }
 
@@ -367,8 +372,9 @@ footer {
 /* ---------- Responsive ---------- */
 
 @media (max-width: 720px) {
-  .hero-mark { width: 480px; }
-  .brand-logo { height: 34px; }
+  .hero { min-height: 560px; }
+  .hero-mark { width: 380px; }
+  .brand-logo { height: 46px; }
   nav.main-nav {
     position: absolute;
     top: 100%;
